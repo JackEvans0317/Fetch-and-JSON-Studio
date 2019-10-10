@@ -5,7 +5,9 @@ window.addEventListener("load", function(){
           return b.hoursInSpace - a.hoursInSpace
         });
         let container = document.getElementById("container");
-        document.getElementById("astroTitle").innerHTML += ` (${json.length})`;
+        // document.getElementById("astroTitle").innerHTML += ` ${json.length}`;
+        let astroAmount = json.length;
+        document.getElementById("astroTitle").innerHTML =`${astroAmount} Astronauts`
         for (let i =0; i<json.length;i++) {
           container.innerHTML += `
             <div class="astronaut">
